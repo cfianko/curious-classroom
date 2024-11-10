@@ -1,29 +1,24 @@
+<!-- public/index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Curious Classroom</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Form Submission</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <h1>Welcome to Curious Classroom</h1>
-        <p>This is the home page. Navigate through the links to learn more about us!</p>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Curious Classroom</p>
-    </footer>
+    <h1>Submit Your Information</h1>
+    <form action="/submit-form" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
 </body>
 </html>
